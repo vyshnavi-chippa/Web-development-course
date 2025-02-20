@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: antiquewhite;
+        }
+        /* Class Selector */
+        .div1{
+            background-color: aqua;
+        }
+        /* ID Selector */
+        #div2{
+            background-color: rosybrown;
+        }
+        /* Universal selector */
+        *{
+            color: brown;
+        }
+        /* Child selector */
+        div>p{
+            background-color: rgb(171, 171, 238);
+        }
+        /* Descendent selector */
+        div span{
+            background-color: rgb(209, 239, 173);
+        }
+        /* Pseudo selector */
+        /* a{ */
+            /* background-color: rgb(228, 243, 146); */
+        /* } */
+        a:active{
+            background-color: rgb(35, 146, 122);
+        }
+        a:visited{
+            color: rgb(128, 105, 150);
+        }
+        a:link{
+            color:green
+        }
+        a:hover{
+            background-color:rgb(214, 214, 47)
+        }
+        h4:first-child{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Element Selector</li>
+        <li>Class Selector</li>
+        <li>ID Selector</li>
+        <li>Universal Selector</li>
+        <li>Child Selector</li>
+        <li>Descendent Selector</li>
+        <li>Pseudo Selector</li>
+    </ol>
+    <main class="main1">
+        <h4>This is first h4</h4>
+        <h4>This is second h4</h4>
+    </main>
+    <div>
+            This is div by element selector
+    </div>
+    <div class="div1">
+            This is div by class selector and it is starts with dot classname
+    </div>
+    <div id="div2">
+        This is div by id selector and it starts with # id name
+    </div>
+    <h3>Universal selector is represented by astrick * and it is applied to whole file</h3>
+    <div>
+        This is div with child paragraph
+        <p>
+            this is para and it is child. It is an example for child selector.
+        </p>
+    </div>
+    <div>
+        This is div eith child artic element
+        <article>
+            this is Article element with child par
+            <p>
+                This is par and it can be selected by using descendent selector and dessecdent selector overrides the child Selector
+                <span>
+                    This is span
+                </span>
+            </p>
+        </article>
+    </div>
+    <a href="https://www.google.com" target="black">This is Google</a>
+    <br></br>
+    <a href="https://www.facebook2.com">This is Facebook</a>
+    <p>Visited color is violet and for link is green and active background is for when we are clicking and hover is by yellow</p>
+</body>
+</html>
