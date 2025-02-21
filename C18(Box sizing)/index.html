@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        *{
+            margin: 0px;
+            /* border: 0px;
+            padding: 0px; */
+        }
+        .box{
+            background-color: antiquewhite;
+            
+        }
+        .box1{
+            margin: 20px;
+            padding: 35px;
+            border: 5px solid blueviolet;
+            height: 50px;
+            box-sizing: border-box;
+        }
+        .box2{
+            margin: 30px;
+            padding: 35px;
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        This is box
+    </div>
+    <div class="box box2">This is another box</div>
+    <p>Box sizing is used to allot height or width for the margin+border+padding and without it height is alloted to only content </p>
+</body>
+</html>
